@@ -1,0 +1,86 @@
+<html> 
+
+<head> 
+<script> 
+function validateForm() {
+  var x = document.forms["myForm"]["First Name"].value;
+  if (x == "") {
+    alert("First Name must be filled out");
+    return false;
+  }
+}
+</script> 
+
+<style> 
+GEEKFORGEEKS {										 
+	margin-left: 70px; 
+	font-weight: bold ; 
+	float: left; 
+	clear: left; 
+	width: 100px; 
+	text-align: left; 
+	margin-right: 10px; 
+	font-family:sans-serif,bold, Arial, Helvetica; 
+	font-size:14px; 
+} 
+
+div { 
+	box-sizing: border-box; 
+	width: 100%; 
+	border: 100px solid black; 
+	float: left; 
+	align-content: center; 
+	align-items: center; 
+} 
+
+form {										 
+	margin: 0 auto; 
+	width: 600px; 
+}</style></head> 
+
+<body style="background-color:powderblue;"> 
+<h1 style="text-align: center"> REGISTRATION FORM </h1>		 
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post"> 
+	
+	<p>First Name: <input type="text"  name="First Name" > </p>
+	<p>Last Name: <input type="text"  name="Last Name"> </p>
+	<p>Middle Name: <input type="text"  name="Middle Name"> </p>
+	<p>Address: <input type="text"  name="Address"> </p>
+	<p>Birthday:
+    <input type="date" name="Birthday">
+	<p>Gender:
+	<input type="radio" id="male" name="Gender" value="male"> <label for="male" >Male</label>
+	<input type="radio" id="female" name="Gender" value="female"> <label for="female">Female</label></p>		
+	<p>Guardian: <input type="text"  name="Guardian"> </p>
+	<p>ContactNumber: <input type="text" name="Contact Number"> </p> 
+	<p>CivilStatus: <input type="text" name="Civil Status"> </p>
+	
+		
+	<p>YEAR LEVEL
+		<select type="text" value="" name="YEAR LEVEL"> 
+			<option>1ST</option> 
+			<option>2ND</option> 
+			<option>3RD</option> 
+			<option>4TH</option> 
+			<option>5TH</option> 
+		</select></p>
+
+		<p>SELECT YOUR COURSE
+		<select type="text" value="" name="SELECT YOUR COURSE"> 
+			<option>IT</option> 
+			<option>TCM</option> 
+			<option>CoE</option> 
+			<option>EMT</option> 
+			<option>ETM</option> 
+		</select></p>
+
+
+		<p>SCHOOL YEAR: <input type="text" name="SCHOOL YEAR"> </p><br>
+
+
+	
+	    <p><input type="submit" value="Send" name="Submit">	 
+		<input type="reset" value="Reset" name="Reset"> </p>		 
+</form> 
+</body> 
+</html> 
